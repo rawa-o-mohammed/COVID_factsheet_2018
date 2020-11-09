@@ -1,0 +1,24 @@
+{
+    "id": "8FC22824",
+    "path": "D:/COVID_factsheet/covid_recoding.R",
+    "project_path": "covid_recoding.R",
+    "type": "r_source",
+    "hash": "4274980812",
+    "contents": "",
+    "dirty": false,
+    "created": 1604930013391.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "0,14",
+        "scrollLine": "25"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1604930021,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1604930021545,
+    "read_only": false,
+    "read_only_alternatives": []
+}

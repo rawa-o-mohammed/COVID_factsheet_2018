@@ -3,22 +3,22 @@
     "path": "D:/COVID_factsheet/COVID_factsheet_Analysis.R",
     "project_path": "COVID_factsheet_Analysis.R",
     "type": "r_source",
-    "hash": "3334058963",
+    "hash": "895890673",
     "contents": "",
     "dirty": false,
     "created": 1604929931918.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "101,1",
-        "scrollLine": "0"
+        "cursorPosition": "82,5",
+        "scrollLine": "77"
     },
     "folds": "",
-    "lastKnownWriteTime": 1604930267,
+    "lastKnownWriteTime": 1604930616,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1604930267294,
+    "last_content_update": 1604930616,
     "read_only": false,
     "read_only_alternatives": []
 }

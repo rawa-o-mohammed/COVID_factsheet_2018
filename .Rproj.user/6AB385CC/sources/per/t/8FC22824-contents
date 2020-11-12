@@ -85,12 +85,7 @@ covid_recoding <- function(df, loop) {
   
   ############################c17 ###############################################
   
-  df$c17 <-
-    ifelse(
-      df$livelihoods.expenses.tot_expenditure * 0.4 <= df$livelihoods.expenses.food_exp_basic_needs,
-      1,
-      0
-    )
+  df$c17 <- ifelse(df$food_share >= 0.4, 1, 0)
   
   ############################c18 ###############################################
   
@@ -175,7 +170,7 @@ covid_recoding <- function(df, loop) {
         "basic_hh_expenditure",
         "health",
         "health Food",
-        "food",
+        "Food",
         "Education"
       ),
       1,

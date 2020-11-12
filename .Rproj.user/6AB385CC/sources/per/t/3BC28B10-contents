@@ -12,10 +12,10 @@ source("postprocessing_functions.R")
 source("covid_recoding.R")
 ######################load files ##########################################
 # define how to aggregate or disaggregate the findings by or type "all" for not aggregating or not disaggregating
-aggregate <- "district"
+aggregate <- "all"
 disaggregate <- "population_group"
 dap_name <- "covid_analysis_2018"
-
+name <- "2018_covid"
 source("load_inputs.R")
 
 data <- covid_recoding(data, loop)

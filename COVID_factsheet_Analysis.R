@@ -20,12 +20,9 @@ source("load_inputs.R")
 
 data <- covid_recoding(data, loop)
 
-weight.function <- map_to_weighting(
-  sampling.frame = sampling_frame,
-  data.stratum.column = "strata",
-  sampling.frame.population.column = "weights",
-  sampling.frame.stratum.column = "strata"
-)
+weights <- function(data){
+  data$weights
+}
 
 questionnaire <-
   load_questionnaire(
@@ -39,9 +36,9 @@ result <-
   from_analysisplan_map_to_output(
     data = data,
     analysisplan =  dap,
-    weighting = weight.function,
+    weighting = weights,
     questionnaire = questionnaire,
-    confidence_level = 0.95
+    confidence_level = 0.9
   )
 
 district_gov <-
@@ -81,7 +78,7 @@ for (i in 1:length(groups)) {
       lookup_table = lookup_table,
       district_gov = district_gov
     )
-  df <- df[rowSums(is.na(df)) != ncol(df) - 2, ]
+  df <- df[rowSums(is.na(df)) != ncol(df) - 2,]
   df <- df[, colSums(is.na(df)) != nrow(df) - 4]
   if (i == 1) {
     xlsx::write.xlsx(

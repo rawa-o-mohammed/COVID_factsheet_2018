@@ -8,7 +8,6 @@ choice <-
     "input/kobo/kobo_choices.csv",
     stringsAsFactors = F
   )
-
 data <-
   read.csv(
     "input/dataset/2018_household level_dataset.csv",
@@ -33,10 +32,5 @@ dap$independent.variable <- disaggregate
 lookup_table <-
   read.csv(
     "input/lookup_tables/lookup_table_names.csv",
-    stringsAsFactors = F
-  )
-sampling_frame <-
-  read.csv(
-    "input/sampling_frame/sampling_frame.csv",
     stringsAsFactors = F
   )
